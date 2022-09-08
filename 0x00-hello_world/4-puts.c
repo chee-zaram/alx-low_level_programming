@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main() - program start and ends in this function
+ * main - program start and ends in this function
  * takes no arguments
  *
  * Description: contains a puts() function to print string to standard output
