@@ -1,4 +1,4 @@
-## C - Hello, World
+# C - Hello, World
 ### 0-preprocessor
 Script that runs a C file in **$CFILE** through the preprocessor and saves the result in another file **c**. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x00-hello_world/0-preprocessor).
 ### 1-compiler
@@ -15,5 +15,5 @@ C program that prints exactly *with proper grammar, but the outcome is a piece o
 C program that prints the size of various types on the computer it is compiled and run on without warnings. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x00-hello_world/6-size.c).
 ### 100-intel
 Script that generates the assembly code in intel syntax (dialect) of a C code in $CFILE, and saves it in an output file with extension **.s**. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x00-hello_world/100-intel).
-# 101-quote.c
+### 101-quote.c
 C program that prints exactly *and that piece of art is useful" - Dora Korpar, 2015-10-19*, followed by a new line to the standard error without using a function listed in NAME section of the **man 3 printf** or **man 3 puts**. Program should return 1, and run without any warnings. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x00-hello_world/101-quote.c).
