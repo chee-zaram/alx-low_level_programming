@@ -1,4 +1,4 @@
-# C - Hello, World
+## C - Hello, World
 ### 0-preprocessor
 Script that runs a C file in **$CFILE** through the preprocessor and saves the result in another file **c**. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x00-hello_world/0-preprocessor).
 ### 1-compiler
