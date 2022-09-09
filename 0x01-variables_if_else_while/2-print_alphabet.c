@@ -11,9 +11,9 @@ int main(void)
 {
 	int i;
 
-	for (i = 97; i < 123; i++)
+	for (i = 97; i < 123; i++) /* lowercase alpha in ascii */
 		putchar(i);
-	putchar(10);
+	putchar(10); /* newline ascii */
 	return (0);
 }
 
