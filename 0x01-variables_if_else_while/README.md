@@ -16,4 +16,6 @@ C program to print all single digit base 10 numbers from **0**, followed by a ne
 ### 7-print_tebahpla.c
 C program to print the lowercase alphabet in reverse, followed by newline, using only **putchar**, only twice. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x01-variables_if_else_while/7-print_tebahpla.c).
 ### 8-print_base16.c
-C program to print all numbers of base 16 in lowercase, followed by newline, using only **putchar**, only twice. [click]().
+C program to print all numbers of base 16 in lowercase, followed by newline, using only **putchar**, only twice. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x01-variables_if_else_while/8-print_base16.c).
+### 9-print_comb.c
+C program to print all single-digit numbers in ascending order, separated by comma and space, using only **putchar**, a maximum of four times. [click]().
