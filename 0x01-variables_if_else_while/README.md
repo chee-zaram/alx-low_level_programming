@@ -14,4 +14,6 @@ C program to print all single digit base 10 numbers starting from **0**. [click]
 ### 6-print_numberz.c
 C program to print all single digit base 10 numbers from **0**, followed by a newline using only **putchar** function, only twice, without using any variable of *char* data type. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x01-variables_if_else_while/6-print_numberz.c).
 ### 7-print_tebahpla.c
-C program to print the lowercase alphabet in reverse, followed by newline, using only **putchar**, only twice. [click]().
+C program to print the lowercase alphabet in reverse, followed by newline, using only **putchar**, only twice. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x01-variables_if_else_while/7-print_tebahpla.c).
+### 8-print_base16.c
+C program to print all numbers of base 16 in lowercase, followed by newline, using only **putchar**, only twice. [click]().
