@@ -24,4 +24,4 @@ C program to print all possible different combinations of two digits followed by
 ### 101-print_comb4.c
 C program to print all possible different combinations of three digits followed by comma and space, with the three digits being different and the first digit less than the second and second less than third, using only **putchar** function, a max of 6 times, without using **char** data type. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x01-variables_if_else_while/101-print_comb4.c).
 ### 102-print_comb5.c
-C program to print all possible combinations of two two-digit numbers. [click]().
+C program to print all possible combinations of two two-digit numbers. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x01-variables_if_else_while/102-print_comb5.c).
