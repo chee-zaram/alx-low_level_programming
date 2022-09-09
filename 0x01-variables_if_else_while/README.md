@@ -10,4 +10,6 @@ C program that prints alphabet in lowercase followed by uppercase and then a new
 ### 4-print_alphabt.c
 C program to print all lowercase alphabets except *q* and *e*, followed by new line using only *putchar*, only twice max. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x01-variables_if_else_while/4-print_alphabt.c).
 ### 5-print_numbers.c
-C program to print all single digit base 10 numbers starting from **0**. [click]().
+C program to print all single digit base 10 numbers starting from **0**. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x01-variables_if_else_while/5-print_numbers.c).
+### 6-print_numberz.c
+C program to print all single digit base 10 numbers from **0**, followed by a newline using only **putchar** function, only twice, without using any variable of *char* data type. [click]().
