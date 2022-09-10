@@ -1,10 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - entry
+ * main - entry point
  *
- * Description: nill
- * Return: 0
+ * Description: prints all possible different combinations of three digits.
+ * Numbers seperated by comma and space,
+ * three digits being different,
+ * combination only appearing once in form of the smallest number,
+ * using only putchar function, max of 6 times,
+ * no use of char data type.
+ * Return: value of 0 on success.
  */
 int main(void)
 {
