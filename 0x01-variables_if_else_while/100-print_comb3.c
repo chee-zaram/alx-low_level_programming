@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - entry point
  *
@@ -12,22 +13,15 @@
  */
 int main(void)
 {
-	int num1, num2;
+	int d1, d2;
 
-	for (num1 = 48; num1 < 57; num1++) /**
-					    * Incrementing num1 by 1 starting from 0.
-					    * Using ascii values.
-					    */
+	for (d1 = 48; d1 < 57; d1++)
 	{
-		for (num2 = num1 + 1; num2 <= 57; num2++) /**
-							   * Initializing num2 as num1+1...
-							   * for each iteration of outer loop.
-							   * Incrementing num2 by 1 starting from 1.
-							   */
+		for (d2 = d1 + 1; d2 <= 57; d2++)
 		{
-			putchar(num1);
-			putchar(num2);
-			if (num1 == 56 && num2 == 57)
+			putchar(d1);
+			putchar(d2);
+			if (d1 == 56 && d2 == 57)
 				continue;
 			putchar(44);
 			putchar(32);
