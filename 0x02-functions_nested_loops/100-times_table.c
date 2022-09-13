@@ -13,17 +13,12 @@ void print_times_table(int n)
 
 	if (n >= 0 && n <= 15)
 	{
-		x = 0;
-		while (x <= n)
+		for (x = 0; x <= n; x++)
 		{
-			y = 0;
-			while (y <= n)
+			for (y = 0; y <= n; y++)
 			{
-				z = x * y;
-				z_lp = (z / 10);
-				z_r = (z % 10);
-				z_m = (z_lp % 10);
-				z_l = (z_lp / 10);
+				z = x * y, z_lp = (z / 10), z_r = (z % 10);
+				z_m = (z_lp % 10), z_l = (z_lp / 10);
 				if (y == 0)
 					_putchar(z + 48);
 				if (z < 10 && y != 0)
@@ -33,16 +28,14 @@ void print_times_table(int n)
 					_putchar(32);
 					_putchar(32);
 					_putchar(z + 48);
-				}
-				if (z >= 10 && z < 100)
+				} else if (z >= 10 && z < 100)
 				{
 					_putchar(44);
 					_putchar(32);
 					_putchar(32);
 					_putchar((z / 10) + 48);
 					_putchar((z % 10) + 48);
-				}
-				if (z >= 100)
+				} else if (z >= 100)
 				{
 					_putchar(44);
 					_putchar(32);
@@ -50,9 +43,7 @@ void print_times_table(int n)
 					_putchar(z_m + 48);
 					_putchar(z_r + 48);
 				}
-				y++;
 			}
-			x++;
 			_putchar(10);
 		}
 	}
