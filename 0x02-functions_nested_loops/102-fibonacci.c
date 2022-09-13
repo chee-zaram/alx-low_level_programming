@@ -12,7 +12,7 @@ int main(void)
 	unsigned long int i, x, y, z;
 
 	x = 1, y = 2;
-	for (i = 1; i < 51; i++)
+	for (i = 0; i < 50; i++)
 	{
 		if (x < 20365011074)
 			printf("%lu, ", x);
