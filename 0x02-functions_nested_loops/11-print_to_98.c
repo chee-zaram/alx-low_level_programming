@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 - Prints all natural numbers from n to 98.
- * @n - Takes an integer as argument.
+ * @n: Takes an integer as argument.
  *
  * Return: no return value specified.
  */
