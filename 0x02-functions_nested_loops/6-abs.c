@@ -4,7 +4,7 @@
  * _abs - Computes the absolute value of an integer.
  * @x: Integer to be operated on.
  *
- * Return: Absolute value.
+ * Return: Absolute value of x.
  */
 int _abs(int x)
 {

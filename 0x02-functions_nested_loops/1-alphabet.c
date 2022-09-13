@@ -4,7 +4,7 @@
  * print_alphabet - Prints lowercase alphabet
  * Takes no argument values.
  *
- * Return: 1 on success.
+ * Return: no specified return value.
  */
 void print_alphabet(void)
 {

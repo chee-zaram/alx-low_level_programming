@@ -4,7 +4,7 @@
  * print_alphabet_x10 - Prints alphabet 10 times on newline.
  * Takes no arguments.
  *
- * Return: 1 on success. -1 on failure.
+ * Return: No specified return value.
  */
 void print_alphabet_x10(void)
 {
