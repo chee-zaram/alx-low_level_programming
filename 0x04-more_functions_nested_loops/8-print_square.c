@@ -17,10 +17,10 @@ void print_square(int size)
 		while (y <= size)
 		{
 			_putchar('#');
-			y++;
+			++y;
 		}
 		_putchar(10);
-		x++;
+		++x;
 	}
 }
 
