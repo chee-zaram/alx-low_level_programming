@@ -8,5 +8,5 @@ Using conditional statements and loops. [click here](https://github.com/chee-zar
 Defining functions and extensively using nested loops. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x02-functions_nested_loops).
 ## C - Debugging
 Basics of manual debugging. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x03-debugging).
-# C - More functions, more nested loops
-More work with functions and nested loops. [click here]().
+## C - More functions, more nested loops
+More work with functions and nested loops. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x04-more_functions_nested_loops).
