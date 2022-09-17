@@ -1,4 +1,6 @@
 /**
+ * By Emmanuel Chee-zaram Okeke.
+ *
  * Originally written as part of a task from ALX-SE programme.
  * Optimized it, and rectified a bug that failed to detect when invalid days
  * are passed.
