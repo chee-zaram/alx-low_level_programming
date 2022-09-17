@@ -3,8 +3,10 @@
  * Contributions from Ovy Evbodi.
  *
  * Originally written as part of a task from ALX-SE programme.
- * Optimized it, and rectified a bug that failed to detect when invalid days
- * are passed.
+ * Optimized it, and rectified a bug that failed to detect when invalid dates.
+ * 
+ * For a more personal and complete version
+ * (github.com/chee-zaram/very-basic-c/print-remaining-days)
  */
 
 #include <stdio.h>
