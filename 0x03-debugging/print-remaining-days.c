@@ -26,18 +26,19 @@ void print_remaining_days(int month, int day, int year)
 		{
 			day++;
 		}
-		if ((month > 12 || month < 1) || (month == 1 && day > 31 ||
-				month == 2 && day > 60 ||
-				month == 3 && day > 91 ||
-				month == 4 && day > 121 ||
-				month == 5 && day > 152 ||
-				month == 6 && day > 182 ||
-				month == 7 && day > 213 ||
-				month == 8 && day > 244 ||
-				month == 9 && day > 274 ||
-				month == 10 && day > 305 ||
-				month == 11 && day > 335 ||
-				month == 12 && day > 366))
+		if ((month > 12 || month < 1) ||
+			(month == 1 && (day > 31 || day < 1) ||
+			month == 2 && (day > 59 || day < 32) ||
+			month == 3 && (day > 90 || day < 60) ||
+			month == 4 && (day > 120 || day < 91) ||
+			month == 5 && (day > 151 || day < 121) ||
+			month == 6 && (day > 181 || day < 152) ||
+			month == 7 && (day > 212 || day < 182) ||
+			month == 8 && (day > 243 || day < 213) ||
+			month == 9 && (day > 273 || day < 244) ||
+			month == 10 && (day > 304 || day < 274) ||
+			month == 11 && (day > 334 || day < 305) ||
+			month == 12 && (day > 365 || day < 335)))
 		{
 			printf("Invalid date. Day and/or Month out of range.\n");
 		}
@@ -55,18 +56,19 @@ void print_remaining_days(int month, int day, int year)
 		}
 		else
 		{
-			if ((month > 12 || month < 1) || (month == 1 && day > 31 ||
-				month == 2 && day > 59 ||
-				month == 3 && day > 90 ||
-				month == 4 && day > 120 ||
-				month == 5 && day > 151 ||
-				month == 6 && day > 181 ||
-				month == 7 && day > 212 ||
-				month == 8 && day > 243 ||
-				month == 9 && day > 273 ||
-				month == 10 && day > 304 ||
-				month == 11 && day > 334 ||
-				month == 12 && day > 365))
+			if ((month > 12 || month < 1) ||
+				(month == 1 && (day > 31 || day < 1) ||
+				month == 2 && (day > 59 || day < 32) ||
+				month == 3 && (day > 90 || day < 60) ||
+				month == 4 && (day > 120 || day < 91) ||
+				month == 5 && (day > 151 || day < 121) ||
+				month == 6 && (day > 181 || day < 152) ||
+				month == 7 && (day > 212 || day < 182) ||
+				month == 8 && (day > 243 || day < 213) ||
+				month == 9 && (day > 273 || day < 244) ||
+				month == 10 && (day > 304 || day < 274) ||
+				month == 11 && (day > 334 || day < 305) ||
+				month == 12 && (day > 365 || day < 335)))
 			{
 				printf("Invalid date. Day and/or Month out of range.\n");
 			}
