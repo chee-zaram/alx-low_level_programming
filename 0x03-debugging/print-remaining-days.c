@@ -6,7 +6,7 @@
  * Optimized it, and rectified a bug that failed to detect when invalid dates.
  * 
  * For a more personal and complete version
- * (github.com/chee-zaram/very-basic-c/print-remaining-days)
+ * (github.com/chee-zaram/very-basic-c/remaining-days)
  */
 
 #include <stdio.h>
