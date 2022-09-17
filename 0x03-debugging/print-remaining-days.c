@@ -1,5 +1,6 @@
 /**
  * By Emmanuel Chee-zaram Okeke.
+ * Contributions from Ovy Evbodi.
  *
  * Originally written as part of a task from ALX-SE programme.
  * Optimized it, and rectified a bug that failed to detect when invalid days
@@ -17,7 +18,6 @@
 * @year: year
 * Return: void
 */
-
 void print_remaining_days(int month, int day, int year)
 {
 	if (year % 4 == 0)
@@ -39,7 +39,11 @@ void print_remaining_days(int month, int day, int year)
 				month == 11 && day > 335 ||
 				month == 12 && day > 366)
 		{
-			printf("Invalid date. Day out of range.\n");
+			printf("Invalid date. Day and/or Month out of range.\n");
+		}
+		else if (month > 12)
+		{
+			printf("Invalid date. Day and/or Month out of range.\n");
 		}
 		else
 		{
@@ -68,7 +72,11 @@ void print_remaining_days(int month, int day, int year)
 				month == 11 && day > 334 ||
 				month == 12 && day > 365)
 			{
-				printf("Invalid date. Day out of range.\n");
+				printf("Invalid date. Day and/or Month out of range.\n");
+			}
+			else if (month > 12)
+			{
+				printf("Invalid date. Day and/or Month out of range.\n");
 			}
 			else
 			{
