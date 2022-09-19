@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int i, len = 0;
 
-	for (i = 0; i <= s[i]; i++)
+	for (i = 0; 1 ; i++) /* 1 says if True i.e s still exists */
 	{
 		if (*(s + i) == 0)
 			break;
