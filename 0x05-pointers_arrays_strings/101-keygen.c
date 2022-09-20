@@ -1,52 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
 
 /**
  * main - Entry point of program.
  * Takes no arguments.
  *
- * Description: Generates a valid random password.
- * Return: 0 if successful.
+ * Description: To generate random valid passwords for the program 101-crackme.
+ * Return: Returns 0 if successful.
  */
 int main(void)
 {
-	int i, random = 0;
-	char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char lower[] = "abcdefghijklmnopqrstuvwxyz";
-	char nums[] = "0123456789";
-	char s_c[] = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
-	char passwrd[100]; /* length of password */
+	int password[100];
+	int i, rand_total, n;
 
-	srand((unsigned int)(time(NULL))); /* to generate new numbers each time */
-	random = rand() % 4;
+	rand_total = 0;
+	srand(time(NULL)); /* to generate new numbers each time */
 
 	for (i = 0; i < 100; i++)
 	{
-		if (random == 1)
+		password[i] = rand() % 78;
+		rand_total += (password[i] + '0');
+		printf("%d", password[i]);
+		if ((2772 - rand_total) - '0' < 78)
 		{
-			passwrd[i] = nums[rand() % 10]; /* pick randomly from 10 nums */
-			random = rand() % 4;
-			printf("%c", passwrd[i]);
-		}
-		else if (random == 2)
-		{
-			passwrd[i] = s_c[rand() % 32]; /* pick random s c */
-			random = rand() % 4;
-			printf("%c", passwrd[i]);
-		}
-		else if (random == 3)
-		{
-			passwrd[i] = upper[rand() % 26]; /* pick randomly from 26 capital letters */
-			random = rand() % 4;
-			printf("%c", passwrd[i]);
-		}
-		else
-		{
-			passwrd[i] = lower[rand() % 26]; /* pick randomly from 26 small letters */
-			random = rand() % 4;
-			printf("%c", passwrd[i]);
+			n = 2772 - rand_total - '0';
+			printf("%d", n);
+			break;
 		}
 	}
 	return (0);
