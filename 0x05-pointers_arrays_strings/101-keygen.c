@@ -17,7 +17,7 @@ int main(void)
 	char lower[] = "abcdefghijklmnopqrstuvwxyz";
 	char nums[] = "0123456789";
 	char special_char[] = "!@#$^&*?";
-	char passwrd[20]; /* length of password */
+	char passwrd[100]; /* length of password */
 
 	srand((unsigned int)(time(NULL))); /* to generate new numbers each time */
 	random = rand() % 4;
