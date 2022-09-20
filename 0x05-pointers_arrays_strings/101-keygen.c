@@ -20,11 +20,11 @@ int main(void)
 	for (i = 0; i < 100; i++)
 	{
 		password[i] = rand() % 78;
-		rand_total += (password[i] + '0');
+		rand_total += password[i];
 		printf("%d", password[i]);
-		if ((2772 - rand_total) - '0' < 78)
+		if ((2772 - rand_total) < 78)
 		{
-			n = 2772 - rand_total - '0';
+			n = 2772 - rand_total;
 			printf("%d", n);
 			break;
 		}
