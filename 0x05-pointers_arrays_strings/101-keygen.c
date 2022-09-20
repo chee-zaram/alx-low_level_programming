@@ -21,11 +21,11 @@ int main(void)
 	{
 		password[i] = rand() % 78;
 		rand_total += (password[i] + 48);
-		putchar(password[i] + 48);
+		printf("%c", password[i] + 48);
 		if ((2772 - rand_total) - 48 < 78)
 		{
 			n = 2772 - rand_total - 48;
-			putchar(n + 48);
+			printf("%c", n + 48);
 			break;
 		}
 	}
