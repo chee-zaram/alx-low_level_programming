@@ -5,7 +5,7 @@
  * @s1: First argument, and string to the be compared to.
  * @s2: Second argument, and string to be compared.
  *
- * Return: Returns a - number if s1 less than s2, 0 if s1 equal to s2, 
+ * Return: Returns a - number if s1 less than s2, 0 if s1 equal to s2,
  * or a + number if s1 greater than s2.
  */
 int _strcmp(char *s1, char *s2)
