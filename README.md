@@ -10,3 +10,6 @@ Defining functions and extensively using nested loops. [click](https://github.co
 Basics of manual debugging. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x03-debugging).
 ## C - More functions, more nested loops
 More work with functions and nested loops. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x04-more_functions_nested_loops).
+## C - Pointers, arrays, and string
+Fundamentally makes use of arrays, pointers, and strings. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x05-pointers_arrays_strings).
+## C - More pointers, arrays, and strings
