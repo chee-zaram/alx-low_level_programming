@@ -24,6 +24,7 @@ void rev_string(char *s)
 		revString[i] = s[j];
 		i++;
 	}
+	revString[i] = '\0';
 	for (i = 0; 1 ; i++)
 	{
 		if (revString[i] == 0)
