@@ -22,11 +22,8 @@ char *_strpbrk(char *s, char *accept)
 				s = &s[i];
 				return (s);
 			}
-			else if (s[i + 1] == 0)
-			{
-				return (NULL);
-			}
 		}
 	}
+	return (NULL);
 }
 
