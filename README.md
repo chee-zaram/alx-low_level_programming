@@ -13,3 +13,6 @@ More work with functions and nested loops. [click here](https://github.com/chee-
 ## C - Pointers, arrays, and string
 Fundamentally makes use of arrays, pointers, and strings. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x05-pointers_arrays_strings).
 ## C - More pointers, arrays, and strings
+Doing a little more advanced work with pointers, arrays, and strings. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x06-pointers_arrays_strings).
+## C - Even more pointers, arrays, and strings
+Working with multidimensional arrays, manipulating them with pointers. [click here]().
