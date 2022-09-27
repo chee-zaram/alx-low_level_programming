@@ -10,19 +10,21 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, count = 0;
+	unsigned int i, j, check, count = 0;
 
 	for (i = 0; s[i]; i++)
 	{
-		if (s[i] == ' ')
-			break;
+		check = FALSE;
 		for (j = 0; accept[j]; j++)
 		{
 			if (s[i] == accept[j])
 			{
 				count += 1;
+				check = TRUE;
 			}
 		}
+		if (check == FALSE && count != 0)
+			return (count);
 	}
 	return (count);
 }
