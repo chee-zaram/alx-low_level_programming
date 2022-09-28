@@ -17,4 +17,4 @@ Doing a little more advanced work with pointers, arrays, and strings. [click her
 ## C - Even more pointers, arrays, and strings
 Working with multidimensional arrays, manipulating them with pointers. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x07-pointers_arrays_strings).
 ## C - Recursion
-Introductory tasks on recursive functions. [click here]().
+Introductory tasks on recursive functions. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x08-recursion).
