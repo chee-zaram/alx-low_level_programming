@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 		return (0);
 	}
 
-	change = change_cent(cents);
+	change = change_cents(cents);
 	printf("%d\n", change);
 	return (0);
 }
