@@ -18,7 +18,7 @@ Doing a little more advanced work with pointers, arrays, and strings. [click her
 Working with multidimensional arrays, manipulating them with pointers. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x07-pointers_arrays_strings).
 ## C - Recursion
 Introductory tasks on recursive functions. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x08-recursion).
+## C - Static libraries
+Creating and using static libraries in C. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x09-static_libraries).
 ## C - argc, argv
 Taking commandline arguments into the main function. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x0A-argc_argv).
-## C - Static libraries
-Creating and using static libraries in C.
