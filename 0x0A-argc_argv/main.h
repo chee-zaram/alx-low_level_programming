@@ -5,4 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int change_cents(int cents);
+
 #endif /* for MAIN_H */
