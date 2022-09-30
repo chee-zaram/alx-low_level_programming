@@ -10,6 +10,7 @@
  */
 int main(int argc, char **argv)
 {
+	(void)argc;
 	if (1)
 		printf("%s\n", *argv);
 	return (0);
