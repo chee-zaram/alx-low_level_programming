@@ -12,11 +12,6 @@ char *str_concat(char *s1, char *s2)
 	char *mptr;
 	unsigned int i, j, size;
 
-	if (s1 == NULL)
-		*s1 = '\0';
-	if (s1 == NULL)
-		*s2 = '\0';
-
 	for (i = 0; s1 && *(s1 + i); i++, size++)
 		;
 	for (i = 0; s2 && *(s2 + i); i++, size++)
@@ -26,12 +21,16 @@ char *str_concat(char *s1, char *s2)
 	if (mptr == NULL)
 		return (NULL);
 
-	for (i = 0; *(s1 + i); i++)
-		*(mptr + i) = *(s1 + i);
-
-	for (j = 0; *(s2 + j); j++, i++)
-		*(mptr + i) = *(s2 + j);
-
+	if (s1)
+	{
+		for (i = 0; *(s1 + i); i++)
+			*(mptr + i) = *(s1 + i);
+	}
+	if (s2)
+	{
+		for (j = 0; *(s2 + j); j++, i++)
+			*(mptr + i) = *(s2 + j);
+	}
 	*(mptr + i) = '\0';
 
 	return (mptr);
