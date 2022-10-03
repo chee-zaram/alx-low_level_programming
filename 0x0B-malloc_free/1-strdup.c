@@ -12,11 +12,11 @@ char *_strdup(char *str)
 	char *mptr;
 	unsigned int i, size;
 
-	for (size = 0; *(str + size); size++)
-		;
-
 	if (str == NULL)
 		return (NULL);
+
+	for (size = 0; *(str + size); size++)
+		;
 
 	mptr = (char *)malloc(sizeof(char) * size + 1);
 	if (mptr == NULL)
