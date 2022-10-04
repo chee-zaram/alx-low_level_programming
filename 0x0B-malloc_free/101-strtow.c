@@ -9,7 +9,7 @@
  */
 char **strtow(char *str)
 {
-	int x, height, ptr[height];
+	int x, height, ptr[1000];
 	char **mptr;
 
 	height = word_count(str);
