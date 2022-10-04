@@ -1,8 +1,5 @@
 #include "main.h"
 
-char **str_to_w(char *str, int height, char **mptr);
-int *word_len(char *str);
-
 /**
  * strtow - Splits a string into words.
  * @str: Pointer to string to be split.
@@ -12,13 +9,16 @@ int *word_len(char *str);
  */
 char **strtow(char *str)
 {
-	int *w_len_arr, x, height;
+	int x, height;
 	char **mptr;
 
-	w_len_arr = word_len(str);
 	height = word_count(str);
 
-	if (str == NULL || *str == 0 || height == 0 || w_len_arr == NULL)
+	int ptr[height];
+
+	word_len(str, ptr);
+
+	if (str == NULL || *str == 0 || height == 0)
 		return (NULL);
 
 	mptr = (char **)malloc(sizeof(char *) * height + 1);
@@ -28,11 +28,10 @@ char **strtow(char *str)
 
 	for (x = 0; x < height; x++)
 	{
-		*(mptr + x) = (char *)malloc(sizeof(char) * (w_len_arr[x] + 1));
+		*(mptr + x) = (char *)malloc(sizeof(char) * (ptr[x] + 1));
 		if (*(mptr + x) == NULL)
 			return (NULL);
 	}
-	free(w_len_arr);
 
 	return (str_to_w(str, height, mptr));
 }
@@ -80,21 +79,16 @@ char **str_to_w(char *str, int height, char **mptr)
 /**
  * word_len - Gets the length of a each word in a string.
  * @str: Pointer to string for which words should be counted.
+ * @ptr: Pointer to array of words' lengths.
  *
- * Return: Returns pointer to array of words lengths.
+ * Return: No return value.
  */
-int *word_len(char *str)
+void word_len(char *str, int *ptr)
 {
-	int *ptr;
 	int i, w, j = 0;
 
 	for (i = 0; str[i]; i++)
 		;
-
-	ptr = (int *)malloc(sizeof(int) * i);
-
-	if (ptr == NULL)
-		return (NULL);
 
 	for (i = 0; str[i]; i++)
 	{
@@ -110,7 +104,6 @@ int *word_len(char *str)
 			}
 		}
 	}
-	return (ptr);
 }
 
 /**
