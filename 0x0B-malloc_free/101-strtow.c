@@ -9,13 +9,10 @@
  */
 char **strtow(char *str)
 {
-	int x, height;
+	int x, height, ptr[height];
 	char **mptr;
 
 	height = word_count(str);
-
-	int ptr[height];
-
 	word_len(str, ptr);
 
 	if (str == NULL || *str == 0 || height == 0)
