@@ -1,5 +1,5 @@
 # C - malloc, free
-Functions that help strengthen understanding of dynamic memory allocation, using malloc() and free().
+Functions that help strengthen understanding of dynamic memory allocation, using **malloc()** and **free()**.
 - Function that creates an array of chars, and initializes it with a specific char. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x0B-malloc_free/0-create_array.c).
 - Returns a pointer to a newly allocated space in memory, which contains a copy of the string given as parameter. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x0B-malloc_free/1-strdup.c).
 - Concatenates two strings. [click](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x0B-malloc_free/2-str_concat.c).
