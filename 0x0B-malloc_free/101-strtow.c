@@ -16,7 +16,7 @@ char **strtow(char *str)
 	height = word_count(str);
 	if (str == NULL || *str == 0 || height == 0)
 		return (NULL);
-	mptr = (char **)malloc(sizeof(char *) * height);
+	mptr = (char **)malloc(sizeof(char *) * height + 1);
 
 	if (mptr == NULL)
 		return (NULL);
