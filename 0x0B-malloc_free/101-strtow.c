@@ -1,5 +1,8 @@
 #include "main.h"
 
+char **str_to_w(char *str, int height, char **mptr);
+int *word_len(char *str);
+
 /**
  * strtow - Splits a string into words.
  * @str: Pointer to string to be split.
@@ -9,35 +12,57 @@
  */
 char **strtow(char *str)
 {
-	int x, y, w, len, height, j = 0;
+	int *w_len_arr, x, height;
 	char **mptr;
 
-	len = _strlen(str);
+	w_len_arr = word_len(str);
 	height = word_count(str);
-	if (str == NULL || *str == 0 || height == 0)
+
+	if (str == NULL || *str == 0 || height == 0 || w_len_arr == NULL)
 		return (NULL);
+
 	mptr = (char **)malloc(sizeof(char *) * height + 1);
 
 	if (mptr == NULL)
 		return (NULL);
+
 	for (x = 0; x < height; x++)
 	{
-		*(mptr + x) = (char *)malloc(sizeof(char) * len + 1);
+		*(mptr + x) = (char *)malloc(sizeof(char) * (w_len_arr[x] + 1));
 		if (*(mptr + x) == NULL)
 			return (NULL);
 	}
+	free(w_len_arr);
+
+	return (str_to_w(str, height, mptr));
+}
+
+/**
+ * str_to_w - Seperates all the words in a string into new strings.
+ * @str: Pointer to original string.
+ * @height: Number of words to be made into strings.
+ * @mptr: Pointer to pointers to address of each new string.
+ *
+ * Return: Pointer to pointers to new strings.
+ */
+char **str_to_w(char *str, int height, char **mptr)
+{
+	int x, y, w, j = 0;
+
 	for (x = 0, w = NO_WORD; x < height; x++, w = NO_WORD)
 	{
-		for (y = 0; y < len; j++)
+		for (y = 0; 1; j++)
 		{
-			if (*(str + j) == ' ' && w)
+			if ((*(str + j) == ' ' || *(str + j) == '\0') && w)
 			{
 				*(*(mptr + x) + y) = '\0';
 				j++;
 				break;
 			}
-			else if (*(str + j) == ' ' && !w)
+
+			if (*(str + j) == ' ' && !w)
 				continue;
+
 			if (*(str + j) != ' ')
 			{
 				*(*(mptr + x) + y) = *(str + j);
@@ -48,20 +73,44 @@ char **strtow(char *str)
 	}
 	*(*(mptr + (x - 1)) + y) = '\0';
 	*(mptr + height) = NULL;
+
 	return (mptr);
 }
 
 /**
- * _strlen - Gets the length of a string.
- * @str: Pointer to string to be counted.
+ * word_len - Gets the length of a each word in a string.
+ * @str: Pointer to string for which words should be counted.
  *
- * Return: Returns number of elements in string.
+ * Return: Returns pointer to array of words lengths.
  */
-int _strlen(char *str)
+int *word_len(char *str)
 {
-	if (*str == 0)
-		return (0);
-	return (1 + _strlen(str + 1));
+	int *ptr;
+	int i, w, j = 0;
+
+	for (i = 0; str[i]; i++)
+		;
+
+	ptr = (int *)malloc(sizeof(int) * i);
+
+	if (ptr == NULL)
+		return (NULL);
+
+	for (i = 0; str[i]; i++)
+	{
+		if (str[i] != ' ')
+		{
+			for (w = 0; 1; i++, w++)
+			{
+				if (str[i] == ' ' || str[i] == '\0')
+				{
+					ptr[j++] = w;
+					break;
+				}
+			}
+		}
+	}
+	return (ptr);
 }
 
 /**

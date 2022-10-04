@@ -13,7 +13,8 @@ int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
 char **strtow(char *str);
-int _strlen(char *str);
+char **str_to_w(char *str, int height, char **mptr);
+int *word_len(char *str);
 int word_count(char *str);
 
 #endif /* for MAIN_H */
