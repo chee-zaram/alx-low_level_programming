@@ -90,7 +90,7 @@ void _print_str(char *str, unsigned int len)
  */
 void ErrorMsg(void)
 {
-	_print_str("Error", _strlen("Error"));
+	_print_str("Error", strlen("Error"));
 	_putchar('\n');
 	exit(98);
 }
