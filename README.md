@@ -24,3 +24,5 @@ Creating and using static libraries in C. [click here](https://github.com/chee-z
 Taking commandline arguments into the main function. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x0A-argc_argv).
 ## C - malloc, free
 Learning dynamic allocation of memory with **malloc()** and **free()**. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x0B-malloc_free).
+## C - More malloc, free
+Writing more functions that make use of **malloc()** and **free()** to allocate and deallocate memory.
