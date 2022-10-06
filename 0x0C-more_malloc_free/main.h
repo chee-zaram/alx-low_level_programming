@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
 
 void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, unsigned int n);
@@ -12,10 +13,7 @@ int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 void ErrorMsg(void);
 void _print_str(char *str, unsigned int len);
-unsigned int _strlen(char *str);
 int check_non_digit(char *str);
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+int _putchar(char c);
+
 #endif /* for MAIN_H */

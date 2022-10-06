@@ -16,8 +16,8 @@ int main(int argc, char **argv)
 	str1 = argv[1], str2 = argv[2];
 	if (argc != 3 || check_non_digit(str1) == 0 || check_non_digit(str2) == 0)
 		ErrorMsg();
-	len1 = _strlen(str1);
-	len2 = _strlen(str2);
+	len1 = strlen(str1);
+	len2 = strlen(str2);
 	tot_len = len1 + len2 + 1;
 	result = malloc(sizeof(int) * tot_len);
 	if (result == NULL)
@@ -71,19 +71,6 @@ int check_non_digit(char *str)
 }
 
 /**
- * _strlen - Gets the length of a string.
- * @str: String to be counted.
- *
- * Return: Returns length of the string.
- */
-unsigned int _strlen(char *str)
-{
-	if (!*str)
-		return (0);
-	return (1 + _strlen(str + 1));
-}
-
-/**
  * _print_str - Prints a string.
  * @str: Pointer to strings to be printed.
  * @len: Length of the string.
@@ -106,5 +93,16 @@ void ErrorMsg(void)
 	_print_str("Error", _strlen("Error"));
 	_putchar('\n');
 	exit(98);
+}
+
+/**
+ * _putchar - Prints a character.
+ * @c: Character to be printed.
+ *
+ * Return: Returns 1 on success, -1 on error.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
 
