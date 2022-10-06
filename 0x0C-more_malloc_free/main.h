@@ -15,5 +15,6 @@ void ErrorMsg(void);
 void _print_str(char *str, unsigned int len);
 int check_non_digit(char *str);
 int _putchar(char c);
+unsigned int _strlen(char *str);
 
 #endif /* for MAIN_H */

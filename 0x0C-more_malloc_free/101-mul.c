@@ -16,8 +16,8 @@ int main(int argc, char **argv)
 	str1 = argv[1], str2 = argv[2];
 	if (argc != 3 || check_non_digit(str1) == 0 || check_non_digit(str2) == 0)
 		ErrorMsg();
-	len1 = strlen(str1);
-	len2 = strlen(str2);
+	len1 = _strlen(str1);
+	len2 = _strlen(str2);
 	tot_len = len1 + len2 + 1;
 	result = malloc(sizeof(int) * tot_len);
 	if (result == NULL)
@@ -90,7 +90,7 @@ void _print_str(char *str, unsigned int len)
  */
 void ErrorMsg(void)
 {
-	_print_str("Error", strlen("Error"));
+	_print_str("Error", _strlen("Error"));
 	_putchar('\n');
 	exit(98);
 }
@@ -104,5 +104,18 @@ void ErrorMsg(void)
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
+}
+
+/**
+ * _strlen - Counts the number of characters in a string.
+ * @str: Pointer to string.
+ *
+ * Return: Number of characters in the string.
+ */
+unsigned int _strlen(char *str)
+{
+	if (!*str)
+		return (0);
+	return (1 + _strlen(str + 1));
 }
 
