@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 	int len1, len2, tot_len, i, c_o, digit1, digit2, *result, start = NO;
 
 	str1 = argv[1], str2 = argv[2];
-	if (argc != 3 || check_non_digit(str1) == 0 || check_non_digit(str2) == 0)
+	if (argc != 3 || check_non_digit(str1) == 1 || check_non_digit(str2) == 1)
 		ErrorMsg();
 	len1 = _strlen(str1);
 	len2 = _strlen(str2);
@@ -65,9 +65,9 @@ int check_non_digit(char *str)
 	for (i = 0; str[i]; i++)
 	{
 		if (str[i] < 48 || str[i] > 57)
-			return (0);
+			return (1);
 	}
-	return (1);
+	return (0);
 }
 
 /**
