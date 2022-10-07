@@ -1,5 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
+#define YES	1
+#define NO	0
 
 #include <stdio.h>
 #include <stdlib.h>
