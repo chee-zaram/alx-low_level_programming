@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 		ErrorMsg();
 	len1 = _strlen(str1);
 	len2 = _strlen(str2);
-	tot_len = len1 + len2 + 10;
+	tot_len = len1 + len2 + 100;
 	result = malloc(sizeof(int) * tot_len);
 	if (result == NULL)
 		return (1);
@@ -31,12 +31,12 @@ int main(int argc, char **argv)
 		for (len2 = len2 - 1; len2 >= 0; len2--)
 		{
 			digit2 = str2[len2] - 48;
-			c_o += result[len1 + len2 + 10] + (digit1 * digit2);
-			result[len1 + len2 + 10] = c_o % 10;
+			c_o += result[len1 + len2 + 100] + (digit1 * digit2);
+			result[len1 + len2 + 100] = c_o % 10;
 			c_o /= 10;
 		}
 		if (c_o > 0)
-			result[len1 + len2 + 10] += c_o;
+			result[len1 + len2 + 100] += c_o;
 	}
 	for (i = 0; i < tot_len - 1; i++)
 	{
