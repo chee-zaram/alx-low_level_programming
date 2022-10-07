@@ -31,12 +31,12 @@ int main(int argc, char **argv)
 		for (len2 = len2 - 1; len2 >= 0; len2--)
 		{
 			digit2 = str2[len2] - 48;
-			c_o += result[tot_len] + (digit1 * digit2);
-			result[tot_len] = c_o % 10;
+			c_o += result[len1 + len2 + 10] + (digit1 * digit2);
+			result[len1 + len2 + 10] = c_o % 10;
 			c_o /= 10;
 		}
 		if (c_o > 0)
-			result[tot_len] += c_o;
+			result[len1 + len2 + 10] += c_o;
 	}
 	for (i = 0; i < tot_len - 1; i++)
 	{
