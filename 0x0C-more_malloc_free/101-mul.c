@@ -31,14 +31,14 @@ int main(int argc, char **argv)
 		for (len2 = len2 - 1; len2 >= 0; len2--)
 		{
 			digit2 = str2[len2] - 48;
-			c_o += result[len1 + len2 + 1] + (digit1 * digit2);
-			result[len1 + len2 + 1] = c_o % 10;
+			c_o += result[len1 + len2 + 2] + (digit1 * digit2);
+			result[len1 + len2 + 2] = c_o % 10;
 			c_o /= 10;
 		}
 		if (c_o > 0)
-			result[len1 + len2 + 1] += c_o;
+			result[len1 + len2 + 2] += c_o;
 	}
-	for (i = 0; i < tot_len - 1; i++)
+	for (i = 0; i < tot_len; i++)
 	{
 		if (result[i])
 			start = YES;
