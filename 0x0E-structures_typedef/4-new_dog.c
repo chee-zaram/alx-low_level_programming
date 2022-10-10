@@ -15,6 +15,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (new == NULL)
 		return (NULL);
 
+	new->age = age;
+
 	new->name = _strdup(name);
 	if (!(new->name))
 		return (NULL);
@@ -22,8 +24,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new->owner = _strdup(owner);
 	if (!(new->owner))
 		return (NULL);
-
-	new->age = age;
 
 	return (new);
 }
@@ -45,7 +45,7 @@ char *_strdup(char *str)
 	for (size = 0; *(str + size); size++)
 		;
 
-	mptr = (char *)malloc(sizeof(char) * size + 1);
+	mptr = malloc(sizeof(char) * size + 1);
 	if (mptr == NULL)
 		return (NULL);
 
