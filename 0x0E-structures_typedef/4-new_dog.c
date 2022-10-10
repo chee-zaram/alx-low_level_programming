@@ -11,9 +11,10 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new = malloc(sizeof(dog_t));
+
 	if (new == NULL)
 		return (NULL);
-	
+
 	new->name = _strdup(name);
 	new->age = age;
 	new->owner = _strdup(owner);
@@ -21,6 +22,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	return (new);
 }
 
+/**
+ * _strdup - Copies a string in heap.
+ * @str: String to be copied to heap.
+ *
+ * Return: Returns pointer to memory on heap. NULL if failed.
+ */
 char *_strdup(char *str)
 {
 	char *mptr;
