@@ -2,12 +2,11 @@
 
 /**
  * get_op_func - Selects the correct function to perform an operation.
- * @a: First parameter.
- * @b: Second parameter.
+ * @s: String of operator.
  *
  * Return: Returns a pointer to the function that performs the operation.
  */
-int (*get_op_func(char *s))(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
