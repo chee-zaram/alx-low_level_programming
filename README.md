@@ -27,6 +27,8 @@ Learning dynamic allocation of memory with **malloc()** and **free()**. [click](
 ## C - More malloc, free
 Writing more functions that make use of **malloc()** and **free()** to allocate and deallocate memory. We also write functions that act in the same way as **realloc()** and **calloc()**. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x0C-more_malloc_free).
 ## C - Preprocessor
-Project to help improve understanding of how the preprocessor works. [click]().
+Project to help improve understanding of how the preprocessor works. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x0D-preprocessor).
 ## C - Structures, typedef
 Project to help learn proper use of **struct** and **typedef** in C. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x0E-structures_typedef).
+## C - Function pointers
+Using pointer to functions [click]().
