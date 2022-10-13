@@ -10,36 +10,39 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list arglist;
-	unsigned int i, len = n;
+	unsigned int i;
 	char *str;
 
 	va_start(arglist, n);
-	for (i = 0; 1; i++)
+	for (i = 0; i < n; i++)
 	{
 		str = va_arg(arglist, char *);
-		if (str)
+		if (separator)
 		{
-			if (i == (len - 1))
+			if (str)
 			{
-				printf("%s\n", str);
-				break;
+				if (i == 0)
+					printf("%s", str);
+				else
+					printf("%s%s", separator, str);
 			}
-			printf("%s", str);
+			else
+			{
+				if (i == 0)
+					printf("(nil)");
+				else
+					printf("%s(nil)", separator);
+			}
 		}
 		else
 		{
-			printf("(nil)");
-			if (i == (len - 1))
-			{
-				printf("\n");
-				break;
-			}
+			if (!str)
+				printf("(nil)");
+			else
+				printf("%s", str);
 		}
-
-		if (separator)
-			printf("%s", separator);
-
 	}
 	va_end(arglist);
+	printf("\n");
 }
 
