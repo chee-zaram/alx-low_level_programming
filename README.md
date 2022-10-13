@@ -32,3 +32,5 @@ Project to help improve understanding of how the preprocessor works. [click](htt
 Project to help learn proper use of **struct** and **typedef** in C. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x0E-structures_typedef).
 ## C - Function pointers
 Using pointers to functions. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x0F-function_pointers).
+## C - Variadic functions
+Project to learn how to make my functions stretchy. [click]().
