@@ -16,18 +16,15 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 
 	new->str = strdup(str);
-	if (!new->str)
-		return (NULL);
-
 	new->len = _strlen(str);
 	new->next = NULL;
-	if (!(*head))
+	if (!*head)
 	{
-		(*head) = new;
+		*head = new;
 		return (*head);
 	}
 
-	for (prevlast = (*head); prevlast; prevlast = prevlast->next)
+	for (prevlast = *head; prevlast; prevlast = prevlast->next)
 		if (!prevlast->next)
 		{
 			prevlast->next = new;
