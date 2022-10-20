@@ -6,3 +6,6 @@ A project that promotes better understanding of how to efficiently structure dat
 * Creating a function which adds a new node at the end of a linked list. [3-add_node_end.c](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x12-singly_linked_lists/3-add_node_end.c).
 * Creating a function which frees or deletes nodes in a linked list. [4-free_list.c](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x12-singly_linked_lists/4-free_list.c).
 
+Advanced tasks which are unrelated to singly linked lists include:
+* Writing a function that executes before the main function. [100-first.c](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x12-singly_linked_lists/100-first.c).
+* Writing a 64bit program in assembly that prints a string "Hello, Holberton", followed by a newline. [101-hello_holberton.asm](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x12-singly_linked_lists/101-hello_holberton.asm).
