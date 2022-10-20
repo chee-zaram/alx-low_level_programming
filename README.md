@@ -34,3 +34,5 @@ Project to help learn proper use of **struct** and **typedef** in C. [click](htt
 Using pointers to functions. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x0F-function_pointers).
 ## C - Variadic functions
 Project to learn how to make my functions stretchy. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x10-variadic_functions).
+## C - Singly linked lists
+Project to learn more advanced ways of grouping and linking data items in a one directional linear fashion. [click]().
