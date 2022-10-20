@@ -3,15 +3,11 @@ extern	printf
 
 section	.text
 main:
-	push	rbp
-	mov	rbp,rsp
-	sub	rsp,16
+	mov	edi,msg
 	xor	eax,eax
-	lea	rdi,[msg]
 	call	printf
-	add	rsp,16
-	leave
+	mov	eax,0
 	ret
 
-section	.data
-msg:	db "Hello Holberton",10,0
+section .data
+msg:	db "Hello, Holberton",10,0
