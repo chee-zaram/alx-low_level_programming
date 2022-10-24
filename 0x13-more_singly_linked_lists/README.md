@@ -1,5 +1,5 @@
 # C - More singly linked lists
-In this project, in order to further solidify the understanding of concepts related to singly linked lists and its operations, we are tasks to create functions that do the following with a list of nodes with integer data:
+In this project, in order to further solidify the understanding of concepts related to singly linked lists and its operations, we are tasked to create functions that do the following with a list of nodes that have integer data:
 * Print out all the elements of a list. [0-print_listint.c](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/0-print_listint.c).
 * Calculate the number of elements in the **listint_t** list. [1-listint_len.c](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/1-listint_len.c).
 * Add a node at the beginning of the **listint_t** list. [2-add_nodeint.c](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/2-add_nodeint.c).
