@@ -36,3 +36,5 @@ Using pointers to functions. [click](https://github.com/chee-zaram/alx-low_level
 Project to learn how to make my functions stretchy. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x10-variadic_functions).
 ## C - Singly linked lists
 Project to learn more advanced ways of grouping and linking data items in a one directional linear fashion. [click](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x12-singly_linked_lists).
+## C - More singly linked lists
+This projects attempts to solidify the understanding of some more advanced concepts connected to sinlgy linked lists. [click]().
