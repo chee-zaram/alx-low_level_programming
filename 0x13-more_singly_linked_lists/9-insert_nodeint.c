@@ -12,7 +12,6 @@
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *n_node;
-	listint_t *new;
 
 	if (head && *head)
 	{
@@ -23,26 +22,33 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		}
 		else
 		{
-			new =  malloc(sizeof(listint_t));
-			if (!new)
-				return (NULL);
-			new->n = n;
-			new->next = *head;
-			*head = new;
-			return (*head);
+			return (insert(&(*head), n));
 		}
 	}
-	else if (head && !*head)
+	else if (head && !*head && idx == 0)
 	{
-		new = malloc(sizeof(listint_t));
-		if (!new)
-			return (NULL);
-		new->n = n;
-		new->next = *head;
-		*head = new;
-		return (*head);
+		return (insert(&(*head), n));
 	}
 
 	return (NULL);
+}
+
+/**
+ * insert - Insert a new node where called.
+ * @head: Position to insert new node.
+ * @n: Initializer for n data in node.
+ *
+ * Return: Pointer to the new node.
+ */
+listint_t *insert(listint_t **head, int n)
+{
+	listint_t *new = malloc(sizeof(listint_t));
+
+	if (!new)
+		return (NULL);
+	new->n = n;
+	new->next = *head;
+	*head = new;
+	return (*head);
 }
 
