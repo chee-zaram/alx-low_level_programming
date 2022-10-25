@@ -12,19 +12,12 @@ size_t free_listint_safe(listint_t **h)
 
 	if (h && *h)
 	{
+		size = 1;
 		if (*h > (*h)->next)
-		{
-			size = 1;
 			size += free_listint_safe(&(*h)->next);
-			free(*h);
-			*h = NULL;
-		}
-		else
-		{
-			free(*h);
-		}
-		return (size);
+		free(*h);
 	}
+	*h = NULL;
 	return (size);
 }
 
