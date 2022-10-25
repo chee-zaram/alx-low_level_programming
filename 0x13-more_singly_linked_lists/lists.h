@@ -1,8 +1,8 @@
 #ifndef	_LISTS_H_
 #define	_LISTS_H_
 
-#define		PASS		 1
-#define		FAIL		-1
+#define PASS		 1
+#define FAIL		-1
 
 #include	<stdio.h>
 #include	<stdlib.h>
@@ -33,6 +33,7 @@ int sum_listint(listint_t *head);
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
 listint_t *insert(listint_t **head, int n);
+listint_t *reverse_listint(listint_t **head);
 
 #endif /* for _LISTS_H_ */
 
