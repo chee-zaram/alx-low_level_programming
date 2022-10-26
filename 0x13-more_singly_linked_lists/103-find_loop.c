@@ -6,15 +6,24 @@
  *
  * Return: Pointer to the start of the loop. NULL if non exists.
  */
+
 listint_t *find_listint_loop(listint_t *head)
 {
-	if (head)
+	listint_t *ahead = head, *behind = head, *other_meet = head;
+
+	while (behind && ahead && ahead->next)
 	{
-		if (head > head->next)
-			head = find_listint_loop(head->next);
-		else
-			return (head->next);
-		return (head);
+		behind = behind->next;
+		ahead = ahead->next->next;
+		if (behind == ahead)
+		{
+			while (behind != other_meet)
+			{
+				behind = behind->next;
+				other_meet = other_meet->next;
+			}
+			return (behind);
+		}
 	}
 	return (NULL);
 }

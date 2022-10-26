@@ -9,17 +9,44 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t count = 0;
+	const listint_t *ahead = head, *behind = head, *start;
 
-	if (head)
+	while (behind)
 	{
-		printf("[%p] %d\n", (void *)head, head->n);
-		count = 1;
-		if (head > head->next)
-			count += print_listint_safe(head->next);
-		else
-			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
-		return (count);
+		count++;
+		printf("[%p] %d\n", (void *)behind, behind->n);
+		if (ahead != NULL && ahead->next != NULL)
+			ahead = ahead->next->next;
+		behind = behind->next;
+		if (behind == ahead && behind != NULL)
+		{
+			start = find_loop_print(behind, head);
+			while (behind != start)
+			{
+				printf("[%p] %d\n", (void *)behind, behind->n);
+				behind = behind->next;
+				count++;
+			}
+			printf("-> [%p] %d\n", (void *)behind, behind->n);
+			return (count);
+		}
 	}
-	return (0);
+	return (count);
+}
+
+/**
+ * find_loop_print - Finds the start of the loop for the print function.
+ * @meet: Pointer to the node where the loop starts.
+ * @head: Pointer to the start of the list.
+ *
+ * Return: Pointer to the node where the loop starts.
+ */
+const listint_t *find_loop_print(const listint_t *meet, const listint_t *head)
+{
+	const listint_t *other_meet = head;
+
+	if (meet != other_meet)
+		meet = find_loop_print(meet->next, other_meet->next);
+	return (meet);
 }
 
