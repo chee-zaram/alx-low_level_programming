@@ -8,17 +8,20 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int len = 0, b_ten = 0, pos = 0;
-	long int i;
+	int len = 0, i, pos = 0;
+	unsigned int  b_ten = 0;
 
-	while (b && b[len])
+	if (!b)
+		return (b_ten);
+
+	while (b[len])
 	{
 		if (b[len] != '0' && b[len] != '1')
 			return (b_ten);
 		len++;
 	}
 
-	for (i = len - 1; b && (i >= 0); i--, pos++)
+	for (i = len - 1; i >= 0; i--, pos++)
 		b_ten = b_ten + (b[i] - '0') * (1 << pos);
 
 	return (b_ten);
