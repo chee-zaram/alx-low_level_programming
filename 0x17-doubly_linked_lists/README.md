@@ -12,3 +12,7 @@ Tasks make use of the dlistint_t list in **lists.h**, and required us to create 
 * Inserts a new node at a given index.
 * Deletes the node at index given in the list.
 ***
+Advanced tasks required us to:
+* Find the password for [crackme4](), and store the password in [100-password]().
+* Find the largest palindrome made from the product of two 3-digit number. Save the result in [102-result](). My solution is in [102-code_result.py]().
+***
