@@ -13,6 +13,6 @@ Tasks make use of the dlistint_t list in **lists.h**, and required us to create 
 * Deletes the node at index given in the list.
 ***
 Advanced tasks required us to:
-* Find the password for [crackme4](), and store the password in [100-password]().
-* Find the largest palindrome made from the product of two 3-digit number. Save the result in [102-result](). My solution is in [102-code_result.py]().
+* Find the password for [crackme4](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/crackme4), and store the password in [100-password](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/100-password). **Tips**: run ***file crackme4***. checkout **uncompyle6**.
+* Find the largest palindrome made from the product of two 3-digit numbers. Save the result in [102-result](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/102-result). My solution is in [102-code_result.py](https://github.com/chee-zaram/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/102-code_result.py).
 ***
