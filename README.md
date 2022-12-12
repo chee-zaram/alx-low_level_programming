@@ -44,3 +44,5 @@ Manipulating data and memory on the bit level. [click here](https://github.com/c
 Using system calls and kernel functions. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x15-file_io).
 ## C - Doubly linked lists
 Learning about and using doubly linked list. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x17-doubly_linked_lists).
+## C - Dynamic libraries
+Learning what dynamic libraries are using carefully crafted tasks. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x18-dynamic_libraries).
