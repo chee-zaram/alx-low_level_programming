@@ -21,6 +21,8 @@ size_t print_listint_safe(const listint_t *head)
 		if (behind == ahead && behind != NULL)
 		{
 			start = find_loop_print(behind, head);
+			if (!start)
+				continue;
 			while (behind != start)
 			{
 				printf("[%p] %d\n", (void *)behind, behind->n);
@@ -45,6 +47,8 @@ const listint_t *find_loop_print(const listint_t *meet, const listint_t *head)
 {
 	const listint_t *other_meet = head;
 
+	if (meet == NULL)
+		return (NULL);
 	if (meet != other_meet)
 		meet = find_loop_print(meet->next, other_meet->next);
 	return (meet);
