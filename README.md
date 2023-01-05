@@ -96,4 +96,4 @@ Learning what dynamic libraries are using carefully crafted tasks. [click here](
 
 ## C - Hash tables
 
-Learning about hash tables (hash maps), usage, advantages and drawbacks, collisions. [click here]()
+Learning about hash tables (hash maps), usage, advantages and drawbacks, collisions. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x1A-hash_tables)
