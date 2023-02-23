@@ -1,0 +1,16 @@
+# Requirements:
+#
+# name of the executable: school
+# rules: all
+# The all rule builds your executable
+# variables: none
+
+.PHONY: all clean
+
+# Compile all .c files to create an executable
+all:
+	gcc main.c school.c -o school
+
+# Delete our executable
+clean:
+	rm -f school
