@@ -97,3 +97,7 @@ Learning what dynamic libraries are using carefully crafted tasks. [click here](
 ## C - Hash tables
 
 Learning about hash tables (hash maps), usage, advantages and drawbacks, collisions. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x1A-hash_tables)
+
+## C - Makefiles
+
+In this project, we explore the world of makefiles and the `make` utility. [click here]().
