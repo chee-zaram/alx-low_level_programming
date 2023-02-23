@@ -1,0 +1,40 @@
+# This file was made with the following rules to adhere to
+# The all rule should recompile only the updated source files
+# The clean, oclean, fclean, re rules should never fail
+# You are not allowed to have a list of all the .o files
+# You have to use $(RM) for the cleaning up rules, but you are not allowed to set the RM variable
+# You are not allowed to use the string $(CC) more than once in your Makefile
+# You are only allowed to use the string $(RM) twice in your Makefile
+# You are not allowed to use the string $(CFLAGS) (but the compiler should still use the flags you set in this variable)
+# You are not allowed to have an $(OBJ) rule
+# You are not allowed to use the %.o: %.c rule
+# Your Makefile should work even if there is a file in the folder that has the same name as one of your rule
+# Your Makefile should not compile if the header file m.h is missing
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:%.c=%.o)
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# Tell make these don't refer to files and should be rebuilt everytime they are
+# called regardless a file with the name exists or not
+.PHONY: all clean oclean fclean re
+
+# Compile all .o files to create an executable, will not run if m.h is missing
+all: m.h ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
+
+# Delete all temporary vim and Emacs files as well as our executable
+clean:
+	${RM} *~ *.swp *.swx *.swo *.swn ${NAME}
+
+# Delete all .o files
+oclean:
+	${RM} ${OBJ}
+
+# Delete all temp files and the executable as well as the .o files
+fclean: clean oclean
+
+# Delete all .o files and recompile the executable
+re: oclean all
