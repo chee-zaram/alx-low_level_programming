@@ -3,6 +3,8 @@
 ---
 
 This directory contains tasks related to Makefiles in C programming language.
+In the following tasks, we use [these files](https://github.com/holbertonschool/0x1B.c),
+and are the only ones expected to be compiled.
 
 #### Learning Objectives
 

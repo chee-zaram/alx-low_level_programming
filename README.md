@@ -100,4 +100,5 @@ Learning about hash tables (hash maps), usage, advantages and drawbacks, collisi
 
 ## C - Makefiles
 
-In this project, we explore the world of makefiles and the `make` utility. [click here]().
+In this project, we explore the world of makefiles and the `make` utility. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x1C-makefiles)
+to learn more.
