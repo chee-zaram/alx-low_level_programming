@@ -6,20 +6,39 @@ This is the module `5-island_perimeter`
 
 def _validator(grid):
     """
-    Runs checks on `grid` to validate the types
+    Runs checks on `grid` to validate the types and values
 
     Args:
         grid (list): A list of lists of integers
     """
 
+    # check that grid is a list
     if type(grid) != list:
         raise TypeError("'grid' must be a list")
 
+    # check that all rows in grid are list
     if not all(type(row) == list for row in grid):
         raise TypeError("'grid' has to be made up of lists")
 
-    if not all(type(cell) == int for row in grid for cell in row):
-        raise TypeError("each item in a row must be an integer")
+    # check that all cells in the rows are integers 0 or 1
+    if not all(type(cell) == int and cell in (0, 1)
+               for row in grid for cell in row):
+        raise TypeError("each item in a row must be an integer 0 or 1")
+
+    # check that the height of the grid is not more than 100
+    if len(grid) > 100:
+        raise ValueError("The height of 'grid' cannot be greater than 100")
+
+    # check that each row in the grid is less than 100 and are all equal
+    row_0_len = len(grid[0])
+    if row_0_len > 100:
+        raise ValueError("Each row must be less than 100")
+    if not all(row_0_len == len(row) for row in grid):
+        raise ValueError("All rows in the grid must be of equal length")
+
+    # check that the grid is a rectangle
+    if row_0_len == len(grid):
+        raise ValueError("'grid' must be rectangular")
 
 
 def island_perimeter(grid):
@@ -28,8 +47,8 @@ def island_perimeter(grid):
 
     Water regions are specified by 0 and island perimeter by 1
     One cell is square with side length 1
-    Grid cells are connected horizontally or vertically, not diagonally
-    Grid is rectangular. Width and height do not exceed 100
+    `grid` cells are connected horizontally or vertically, not diagonally
+    `grid` is rectangular. Width and height do not exceed 100
     There is only one island
     There are no lakes in the island
 
@@ -39,6 +58,9 @@ def island_perimeter(grid):
     Returns:
         The perimeter of the island
     """
+
+    if not grid:
+        return 0
 
     _validator(grid)
     perimeter = 0
