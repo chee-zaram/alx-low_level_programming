@@ -102,3 +102,7 @@ Learning about hash tables (hash maps), usage, advantages and drawbacks, collisi
 
 In this project, we explore the world of makefiles and the `make` utility. [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x1C-makefiles)
 to learn more.
+
+## C - Search Algorithms
+
+In this project, we go through ways to optimize search for items in data structures using search algorithms [click here](https://github.com/chee-zaram/alx-low_level_programming/tree/main/0x1E-search_algorithms)
