@@ -1,42 +1,17 @@
 #include "search_algos.h"
 
 /**
- * search - find the index of a given number using binary search
- * @array: Array of integers to find number in
- * @beg: Beginning of the array or sub array
- * @end: End of the array or sub array
- * @value: Value to find in the given array
- *
- * Return: The index of the first occurrence or -1 if not found
+ * print_array - Prints array in sorted order
+ * @array: Array to be printed
+ * @l_bound: Lower bound of the array
+ * @u_bound: Upper bound of the array
  */
-static int search(int *array, size_t beg, size_t end, int value)
+static void print_array(int *array, size_t l_bound, size_t u_bound)
 {
-	size_t i, mid;
-
-	if (beg > end)
-		return (-1);
-
 	printf("Searching in array:");
-	for (i = beg; i <= end; ++i)
-	{
-		if (i == end)
-		{
-			printf(" %d\n", array[i]);
-			continue;
-		}
-
-		printf(" %d,", array[i]);
-	}
-
-	mid = (beg + end) / 2;
-
-	if (array[mid] > value)
-		return (search(array, beg, mid - 1, value));
-
-	if (array[mid] < value)
-		return (search(array, mid + 1, end, value));
-
-	return (mid);
+	while (l_bound < u_bound)
+		printf(" %d,", array[l_bound++]);
+	printf(" %d\n", array[l_bound]);
 }
 
 /**
@@ -53,8 +28,26 @@ static int search(int *array, size_t beg, size_t end, int value)
  */
 int binary_search(int *array, size_t size, int value)
 {
+	size_t beg = 0, end = size - 1, mid = 0;
+
 	if (!array || size < 1)
 		return (-1);
 
-	return (search(array, 0, size - 1, value));
+	/* I had used recursion, but it has a worse space complexity Ologn. */
+	/* return (search(array, 0, size - 1, value)); */
+
+	while (beg <= end)
+	{
+		mid = (beg + end) / 2;
+		print_array(array, beg, end);
+
+		if (array[mid] < value)
+			beg = mid + 1;
+		else if (array[mid] > value)
+			end = mid - 1;
+		else
+			return (mid);
+	}
+
+	return (NOT_FOUND);
 }
